@@ -27,7 +27,7 @@
     "sort-packages": true
   },
   "description": "OCM PHP SDK",
-  "name": "andreibesleaga/ocm",
+  "name": "andreibesleaga/ocm-php",
   "require": {
     "php": "^8.1",
     "php-http/discovery": "^1",
