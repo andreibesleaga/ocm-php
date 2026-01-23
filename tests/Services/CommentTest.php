@@ -1,0 +1,63 @@
+<?php
+
+namespace Tests\Services;
+
+use Ocm\Client;
+use Ocm\Comment\CommentSubmitResponse;
+use PHPUnit\Framework\Attributes\CoversNothing;
+use PHPUnit\Framework\Attributes\Test;
+use PHPUnit\Framework\TestCase;
+use Tests\UnsupportedMockTests;
+
+/**
+ * @internal
+ */
+#[CoversNothing]
+final class CommentTest extends TestCase
+{
+    protected Client $client;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $testUrl = getenv('TEST_API_BASE_URL') ?: 'http://127.0.0.1:4010';
+        $client = new Client(apiKey: 'My API Key', baseUrl: $testUrl);
+
+        $this->client = $client;
+    }
+
+    #[Test]
+    public function testSubmit(): void
+    {
+        if (UnsupportedMockTests::$skip) {
+            $this->markTestSkipped('Prism tests are disabled');
+        }
+
+        $result = $this->client->comment->submit(chargePointID: 0);
+
+        // @phpstan-ignore-next-line method.alreadyNarrowedType
+        $this->assertInstanceOf(CommentSubmitResponse::class, $result);
+    }
+
+    #[Test]
+    public function testSubmitWithOptionalParams(): void
+    {
+        if (UnsupportedMockTests::$skip) {
+            $this->markTestSkipped('Prism tests are disabled');
+        }
+
+        $result = $this->client->comment->submit(
+            chargePointID: 0,
+            checkinStatusTypeID: 0,
+            comment: 'string',
+            commentTypeID: 0,
+            rating: 3,
+            relatedURL: 'string',
+            userName: 'string',
+        );
+
+        // @phpstan-ignore-next-line method.alreadyNarrowedType
+        $this->assertInstanceOf(CommentSubmitResponse::class, $result);
+    }
+}
