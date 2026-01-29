@@ -23,7 +23,7 @@ To use this package, install via Composer by adding the following to your applic
     }
   ],
   "require": {
-    "org-placeholder/ocm": "dev-main"
+    "andreibesleaga/ocm-php": "dev-main"
   }
 }
 ```
