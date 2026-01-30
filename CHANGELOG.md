@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2 (2026-01-30)
+
+Full Changelog: [v0.1.1...v0.1.2](https://github.com/andreibesleaga/ocm-php/compare/v0.1.1...v0.1.2)
+
+### Chores
+
+* **internal:** ignore stainless-internal artifacts ([0f7f411](https://github.com/andreibesleaga/ocm-php/commit/0f7f4111d20b272b874e9877e9c45cee7131976b))
+
 ## 0.1.1 (2026-01-29)
 
 Full Changelog: [v0.1.0...v0.1.1](https://github.com/andreibesleaga/ocm-php/compare/v0.1.0...v0.1.1)
