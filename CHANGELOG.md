@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.3 (2026-01-31)
+
+Full Changelog: [v0.1.2...v0.1.3](https://github.com/andreibesleaga/ocm-php/compare/v0.1.2...v0.1.3)
+
+### Bug Fixes
+
+* used redirect count instead of retry count in base client ([1e57042](https://github.com/andreibesleaga/ocm-php/commit/1e570425458e925f9e40e14d697d6fa0ca9fcd93))
+
 ## 0.1.2 (2026-01-30)
 
 Full Changelog: [v0.1.1...v0.1.2](https://github.com/andreibesleaga/ocm-php/compare/v0.1.1...v0.1.2)
