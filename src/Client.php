@@ -67,11 +67,15 @@ class Client extends BaseClient
         ?string $baseUrl = null,
         RequestOptions|array|null $requestOptions = null,
     ) {
-        $this->apiKey = (string) ($apiKey ?? getenv('OCM_API_KEY'));
-        $this->apiKeyHeader = (string) ($apiKeyHeader ?? getenv('OCM_API_KEY'));
-        $this->bearer = (string) ($bearer ?? getenv('OCM_USERNAME'));
+        $this->apiKey = (string) ($apiKey ?? Util::getenv('OCM_API_KEY'));
+        $this->apiKeyHeader = (string) ($apiKeyHeader ?? Util::getenv(
+            'OCM_API_KEY'
+        ));
+        $this->bearer = (string) ($bearer ?? Util::getenv('OCM_USERNAME'));
 
-        $baseUrl ??= getenv('OCM_BASE_URL') ?: 'https://api.openchargemap.io/v3';
+        $baseUrl ??= Util::getenv(
+            'OCM_BASE_URL'
+        ) ?: 'https://api.openchargemap.io/v3';
 
         $options = RequestOptions::parse(
             RequestOptions::with(
