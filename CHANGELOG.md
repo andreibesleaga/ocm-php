@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.2.0 (2026-02-03)
+
+Full Changelog: [v0.1.2...v0.2.0](https://github.com/andreibesleaga/ocm-php/compare/v0.1.2...v0.2.0)
+
+### Features
+
+* use `$_ENV` aware getenv helper ([f9ccd00](https://github.com/andreibesleaga/ocm-php/commit/f9ccd00e4c5cccbe487c054896d5bfed77a469f4))
+
+
+### Bug Fixes
+
+* used redirect count instead of retry count in base client ([1e57042](https://github.com/andreibesleaga/ocm-php/commit/1e570425458e925f9e40e14d697d6fa0ca9fcd93))
+
+
+### Chores
+
+* **internal:** php cs fixer should not be memory limited ([483168c](https://github.com/andreibesleaga/ocm-php/commit/483168ca639bc550d5e8743eb5a66078129b6813))
+
 ## 0.1.2 (2026-01-30)
 
 Full Changelog: [v0.1.1...v0.1.2](https://github.com/andreibesleaga/ocm-php/compare/v0.1.1...v0.1.2)
