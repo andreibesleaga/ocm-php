@@ -32,7 +32,7 @@ final class CommentTest extends TestCase
     public function testSubmit(): void
     {
         if (UnsupportedMockTests::$skip) {
-            $this->markTestSkipped('Prism tests are disabled');
+            $this->markTestSkipped('Mock server tests are disabled');
         }
 
         $result = $this->client->comment->submit(chargePointID: 0);
@@ -45,7 +45,7 @@ final class CommentTest extends TestCase
     public function testSubmitWithOptionalParams(): void
     {
         if (UnsupportedMockTests::$skip) {
-            $this->markTestSkipped('Prism tests are disabled');
+            $this->markTestSkipped('Mock server tests are disabled');
         }
 
         $result = $this->client->comment->submit(
