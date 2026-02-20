@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1 (2026-02-20)
+
+Full Changelog: [v0.2.0...v0.2.1](https://github.com/andreibesleaga/ocm-php/compare/v0.2.0...v0.2.1)
+
+### Chores
+
+* **internal:** remove mock server code ([86d8213](https://github.com/andreibesleaga/ocm-php/commit/86d8213e3dca630d95b26fb7c1b0d029dbdbba09))
+* update mock server docs ([7a2ee84](https://github.com/andreibesleaga/ocm-php/commit/7a2ee84d809ede8aefc8a27cb33742e4b1551997))
+
 ## 0.2.0 (2026-02-03)
 
 Full Changelog: [v0.1.2...v0.2.0](https://github.com/andreibesleaga/ocm-php/compare/v0.1.2...v0.2.0)
