@@ -32,7 +32,7 @@ final class ProfileTest extends TestCase
     public function testAuthenticate(): void
     {
         if (UnsupportedMockTests::$skip) {
-            $this->markTestSkipped('Prism tests are disabled');
+            $this->markTestSkipped('Mock server tests are disabled');
         }
 
         $result = $this->client->profile->authenticate();
