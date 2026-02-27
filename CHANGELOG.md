@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.2 (2026-02-27)
+
+Full Changelog: [v0.2.1...v0.2.2](https://github.com/andreibesleaga/ocm-php/compare/v0.2.1...v0.2.2)
+
+### Chores
+
+* **internal:** upgrade phpunit ([17b3a65](https://github.com/andreibesleaga/ocm-php/commit/17b3a65524390105b79450604554982e3b9ef9a4))
+
 ## 0.2.1 (2026-02-20)
 
 Full Changelog: [v0.2.0...v0.2.1](https://github.com/andreibesleaga/ocm-php/compare/v0.2.0...v0.2.1)
