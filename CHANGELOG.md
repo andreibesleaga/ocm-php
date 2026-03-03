@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.3 (2026-03-03)
+
+Full Changelog: [v0.2.2...v0.2.3](https://github.com/andreibesleaga/ocm-php/compare/v0.2.2...v0.2.3)
+
+### Chores
+
+* **internal:** codegen related update ([ff95043](https://github.com/andreibesleaga/ocm-php/commit/ff950437d2e1567acea85c95a4e769d9042990b7))
+
 ## 0.2.2 (2026-02-27)
 
 Full Changelog: [v0.2.1...v0.2.2](https://github.com/andreibesleaga/ocm-php/compare/v0.2.1...v0.2.2)
