@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.4 (2026-03-17)
+
+Full Changelog: [v0.2.3...v0.2.4](https://github.com/andreibesleaga/ocm-php/compare/v0.2.3...v0.2.4)
+
+### Chores
+
+* **internal:** tweak CI branches ([0ab9c06](https://github.com/andreibesleaga/ocm-php/commit/0ab9c06deefeadcdfd1d46297fd83061bc919299))
+
 ## 0.2.3 (2026-03-03)
 
 Full Changelog: [v0.2.2...v0.2.3](https://github.com/andreibesleaga/ocm-php/compare/v0.2.2...v0.2.3)
