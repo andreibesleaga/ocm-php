@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.5 (2026-04-18)
+
+Full Changelog: [v0.2.4...v0.2.5](https://github.com/andreibesleaga/ocm-php/compare/v0.2.4...v0.2.5)
+
+### Bug Fixes
+
+* **client:** properly generate file params ([d6878df](https://github.com/andreibesleaga/ocm-php/commit/d6878df2580de5eb299d7703bc8b761f643feab3))
+* **client:** resolve serialization issue with unions and enums ([8558806](https://github.com/andreibesleaga/ocm-php/commit/855880638e7f2483355a9b483279a9953823b14f))
+* populate enum-typed properties with enum instances ([3df51f4](https://github.com/andreibesleaga/ocm-php/commit/3df51f44de3719a4f2829e9b8719a40dd168fa05))
+
 ## 0.2.4 (2026-03-17)
 
 Full Changelog: [v0.2.3...v0.2.4](https://github.com/andreibesleaga/ocm-php/compare/v0.2.3...v0.2.4)
