@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.6 (2026-04-26)
+
+Full Changelog: [v0.2.5...v0.2.6](https://github.com/andreibesleaga/ocm-php/compare/v0.2.5...v0.2.6)
+
+### Bug Fixes
+
+* revert enum parsing change that lead to unconditional failure ([347f72b](https://github.com/andreibesleaga/ocm-php/commit/347f72bd36d9340833d20ac497be64011116b7e2))
+
 ## 0.2.5 (2026-04-18)
 
 Full Changelog: [v0.2.4...v0.2.5](https://github.com/andreibesleaga/ocm-php/compare/v0.2.4...v0.2.5)

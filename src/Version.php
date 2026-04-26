@@ -5,5 +5,5 @@ declare(strict_types=1);
 namespace Ocm;
 
 // x-release-please-start-version
-const VERSION = '0.2.5';
+const VERSION = '0.2.6';
 // x-release-please-end
