@@ -7,6 +7,7 @@ namespace Ocm;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Discovery\Psr18ClientDiscovery;
 use Ocm\Core\BaseClient;
+use Ocm\Core\Implementation\StreamingHttpClient;
 use Ocm\Core\Util;
 use Ocm\Services\CommentService;
 use Ocm\Services\MediaitemService;
@@ -86,6 +87,11 @@ class Client extends BaseClient
             ),
             $requestOptions,
         );
+
+        if (is_null($options->streamingTransporter)) {
+            assert(!is_null($options->transporter));
+            $options->streamingTransporter = new StreamingHttpClient($options->transporter);
+        }
 
         /** @var array<string, string|null> $headers */
         $headers = [
