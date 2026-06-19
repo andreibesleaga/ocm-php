@@ -7,6 +7,7 @@ namespace Ocm;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Discovery\Psr18ClientDiscovery;
 use Ocm\Core\BaseClient;
+use Ocm\Core\Implementation\StreamingHttpClient;
 use Ocm\Core\Util;
 use Ocm\Services\CommentService;
 use Ocm\Services\MediaitemService;
@@ -87,18 +88,36 @@ class Client extends BaseClient
             $requestOptions,
         );
 
+        if (is_null($options->streamingTransporter)) {
+            assert(!is_null($options->transporter));
+            $options->streamingTransporter = new StreamingHttpClient($options->transporter);
+        }
+
+        /** @var array<string, string|null> $headers */
+        $headers = [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+            'User-Agent' => sprintf('ocm/PHP %s', VERSION),
+            'X-Stainless-Lang' => 'php',
+            'X-Stainless-Package-Version' => '0.2.7',
+            'X-Stainless-Arch' => Util::machtype(),
+            'X-Stainless-OS' => Util::ostype(),
+            'X-Stainless-Runtime' => php_sapi_name(),
+            'X-Stainless-Runtime-Version' => phpversion(),
+        ];
+
+        $customHeadersEnv = Util::getenv('OCM_CUSTOM_HEADERS');
+        if (null !== $customHeadersEnv) {
+            foreach (explode("\n", $customHeadersEnv) as $line) {
+                $colon = strpos($line, ':');
+                if (false !== $colon) {
+                    $headers[trim(substr($line, 0, $colon))] = trim(substr($line, $colon + 1));
+                }
+            }
+        }
+
         parent::__construct(
-            headers: [
-                'Content-Type' => 'application/json',
-                'Accept' => 'application/json',
-                'User-Agent' => sprintf('ocm/PHP %s', VERSION),
-                'X-Stainless-Lang' => 'php',
-                'X-Stainless-Package-Version' => '0.0.1',
-                'X-Stainless-Arch' => Util::machtype(),
-                'X-Stainless-OS' => Util::ostype(),
-                'X-Stainless-Runtime' => php_sapi_name(),
-                'X-Stainless-Runtime-Version' => phpversion(),
-            ],
+            headers: $headers,
             baseUrl: $baseUrl,
             options: $options
         );

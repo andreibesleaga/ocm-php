@@ -1,5 +1,19 @@
 # Changelog
 
+=======
+## 0.3.0 (2026-06-19)
+
+Full Changelog: [v0.2.7...v0.3.0](https://github.com/andreibesleaga/ocm-php/compare/v0.2.7...v0.3.0)
+
+### Features
+
+* support setting headers via env ([6eb9df8](https://github.com/andreibesleaga/ocm-php/commit/6eb9df887dd4fe86b84b363ce9b11fcdfb6fa8ce))
+
+
+### Chores
+
+* remove custom code ([1594f01](https://github.com/andreibesleaga/ocm-php/commit/1594f011a646f24c3988cc1b43f317e9f17da22c))
+
 ## 0.2.7 (2026-05-25)
 
 Full Changelog: [v0.2.6...v0.2.7](https://github.com/andreibesleaga/ocm-php/compare/v0.2.6...v0.2.7)
