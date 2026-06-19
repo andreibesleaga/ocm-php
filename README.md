@@ -3,6 +3,7 @@
 The Ocm PHP library provides convenient access to the Ocm REST API from any PHP 8.1.0+ application.
 
 It is generated with [Stainless](https://www.stainless.com/).
+API Reference: https://andreibesleaga.github.io/ocm-api-reference/api.html
 
 ## Documentation
 
